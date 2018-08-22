@@ -44,7 +44,6 @@ class App extends Component {
         .catch(err => {console.log(err)})
   }
   handleDeleteNote = id => {
-        const id = this.state.id;
         axios
             .delete(`${process.env.REACT_APP_API}/api/notes/${id}`)
             .then(response => {
