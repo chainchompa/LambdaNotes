@@ -11,7 +11,7 @@ const Notes = props => {
               <div className='note'><Link style={{ textDecoration: 'none' }} to={`/note/${note.id}`} key={Math.random()}>
                 <div className='note-text'>
                   <h2>{note.title.substring(0,15)}</h2>
-                  <p>{note.textBody.substring(0,120)}...</p>
+                  <p>{note.content.substring(0,120)}...</p>
                 </div>
               </Link></div>
             )

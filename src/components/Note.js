@@ -17,7 +17,7 @@ class Note extends Component {
       return (
         <div>
           <h2>{note.title}</h2>
-          <p>{note.textBody}</p>
+          <p>{note.content}</p>
         </div>
       )
     }

@@ -59,7 +59,6 @@ class App extends Component {
     this.setState({currentNote: {id: this.state.currentNote.id, title: this.state.currentNote.title, textBody: event.target.value}})
   }
   handleEditNote = id => {
-    const id = this.props.match.params.id;
     axios
     .put(`${process.env.REACT_APP_API}/api/notes/${id}`, { title: this.state.currentNote.title, content: this.state.currentNote.textBody })
     .then(response => {
