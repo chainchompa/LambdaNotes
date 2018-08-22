@@ -1,0 +1,269 @@
+.app {
+  display: flex;
+  font-family: 'Raleway', sans-serif;
+  color: #4A4A4A;
+  background-color: #F3F3F3;
+  height: 100%;
+
+}
+.app .navigation {
+  background-color: #D8D8D8;
+  width: 350px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  height: 1500px;
+}
+.app .navigation h1 {
+  font-size: 52px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  margin-left: 20px;
+  line-height: 52px;
+  color: black;
+}
+.app .navigation .nav-links {
+  width: 300px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  height: 150px;
+}
+.app .navigation .nav-links button {
+  background-color: #2BC1C4;
+  width: 300px;
+  height: 60px;
+  color: #FFFFFF;
+  font-size: 22px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+
+}
+.app .navigation a:visited{
+  color:#FFFFFF;
+  text-decoration: none;
+}
+.app .content {
+  background-color: #F3F3F3;
+  width: 100%;
+  margin-left: 50px;
+}
+.app .content a:visited {
+  text-decoration: none;
+  color: #4A4A4A;
+}
+.app .content .notes h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  margin-top: 85px;
+  margin-left: 30px;
+}
+.app .content .notes ul {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 90%;
+}
+.content .notes ul .note {
+  border:2px #979797 solid;
+  margin-bottom: 40px;
+  margin-right: 60px;
+  background-color: white;
+  width: 20%;
+  height: 300px;
+}
+.content .notes ul .note .note-text {
+  max-width: 200px;
+  padding-left: 30px;
+  padding-right: 40px;
+  line-height: 30px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.notes ul .note .note-text h2 {
+  font-size: 22px;
+  border-bottom: 2px #979797 solid;
+  padding-bottom: 15px;
+  color: black;
+}
+.notes ul .note .note-text p {
+  line-height: 30px;
+  color: #4A4A4A;
+}
+
+.content form {
+  margin-left: 30px;
+  display: flex;
+  flex-flow: column;
+}
+
+.content .form h2 {
+  margin-top: 100px;
+  margin-left: 25px;
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.content .form input {
+  height: 60px;
+  width: 530px;
+  border-radius: 5px;
+  border: 2px #979797 solid;
+  padding-left: 15px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.content .form textarea {
+  width: 900px;
+  height: 510px;
+  border: 2px #979797 solid;
+  border-radius: 5px;
+  font-size: 18px;
+  padding-left: 15px;
+  font-family: 'Raleway', sans-serif;
+  padding-top: 30px;
+  line-height: 28px;
+}
+
+.content form .save {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  margin-left: 10px;
+  background-color: #2BC1C4;
+  width: 280px;
+  height: 70px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .note-view {
+  width: 100%;
+}
+.content .note-view .edit-delete a:visited {
+  color: black;
+}
+.content .note-view .edit-delete{
+  display: flex;
+  margin-left: 80%;
+  width: 15%;
+  font-size: 20px;
+  justify-content: space-around;
+  font-weight: bold;
+  text-decoration: underline;
+  color: black;
+}
+.content .note-view .edit-delete a {
+  color: #4A4A4A;
+}
+.content .note-view .text {
+  margin-left: 40px;
+}
+.content .note-view .text h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+.content .note-view .text p {
+  margin-top: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 40px;
+}
+.content .edit-page h2 {
+  font-size: 30px;
+  margin-top: 100px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+.content .edit-page form {
+  right: 100px;
+  margin-left: 0;
+}
+.content .edit-page form input {
+  width: 38.5%;
+  height: 60px;
+  border-radius: 5px;
+  border: 2px #979797 solid;
+  padding-left: 15px;
+  font-size: 18px;
+  margin-bottom: 25px;
+  font-family: 'Raleway', sans-serif;
+}
+.content .edit-page form textarea {
+  width: 64%;
+  height: 550px;
+  border-radius: 5px;
+  border: 2px #979797 solid;
+  padding-left: 15px;
+  font-size: 18px;
+  margin-bottom: 25px;
+  font-family: 'Raleway', sans-serif;
+  padding-top: 30px;
+  line-height: 28px;
+}
+.content .edit-page button {
+  background-color: #2BC1C4;
+  width: 300px;
+  height: 60px;
+  color: #FFFFFF;
+  font-size: 22px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+.delete-background {
+  width: 100%;
+  height: 100%;
+  background-color: lightgray;
+  opacity: .8;
+  z-index: 2;
+  margin-top: 0px;
+  position: absolute;
+}
+.delete-alert {
+  border: 2px black solid;
+  width: 45%;
+  height: 31%;
+  margin: 0 auto;
+  margin-top: 15%;
+  background-color: white;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.delete-alert .delete-text {
+  color: black;
+  font-size: 26px;
+  font-weight: bold;
+}
+.delete-alert .delete-buttons {
+  width: 75%;
+  height: 24%;
+}
+.delete-alert .delete-buttons .delete-button{
+  width: 46%;
+  margin-right: 8%;
+  height: 100%;
+  color: white;
+  font-size: 26px;
+  font-weight: bold;
+  background-color: #D0021B;
+  border: 2px #979797 solid;
+}
+.delete-alert .delete-buttons .no-button{
+  width: 46%;
+  height: 100%;
+  color: white;
+  font-size: 26px;
+  font-weight: bold;
+  background-color: #2BC1C4;
+  border: 2px #979797 solid;
+}
