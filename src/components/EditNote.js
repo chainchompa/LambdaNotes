@@ -23,7 +23,7 @@ class EditNote extends Component {
         <h2>Edit Note:</h2>
         <form>
           <input name='title' value={this.props.currentNote.title} onChange={this.props.handleEditTitle}/>
-          <textarea name='textBody' value={this.props.currentNote.textBody} onChange={this.props.handleEditTextBody}/>
+          <textarea name='textBody' value={this.props.currentNote.content} onChange={this.props.handleEditTextBody}/>
         </form>
         <Link to={'/'}><button type='button' onClick={this.editCompleted}>Update</button></Link>
       </div>
